@@ -1,0 +1,10 @@
+baseURL = 'https://azcertified.com/'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+languageCode = 'en-us'
+title = 'AZ Certified'
+
+# TODO: Add theme
+
+[minify]
+disableHTML = true
