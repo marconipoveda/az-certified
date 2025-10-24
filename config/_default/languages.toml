@@ -1,0 +1,9 @@
+[en]
+title = 'AZ Certified'
+weight = 1
+languageCode = 'en-US'
+languageName = 'English'
+contentDir = 'content/en'
+
+[en.params]
+editURL = 'https://github.com/marconipoveda/azcertified/edit/master/content/en/'
