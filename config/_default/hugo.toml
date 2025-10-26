@@ -1,8 +1,8 @@
-baseURL = 'https://azcertified.com/'
+baseURL = 'https://az-certified.com/'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 languageCode = 'en-us'
-title = 'AZ Certified'
+title = 'Azure Certified'
 
 theme = 'hugo-theme-relearn'
 

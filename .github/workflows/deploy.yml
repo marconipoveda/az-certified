@@ -16,24 +16,59 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        with:
+          path: |
+            resources/_gen
+            .hugo_cache
+          key: hugo-${{ runner.os }}-${{ hashFiles('**/*.scss', '**/*.js', 'config.*', 'hugo.toml', 'hugo.yaml', 'hugo.json') }}
+          restore-keys: |
+            hugo-${{ runner.os }}-
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.151.2"
           extended: true
 
+      - name: Compute branch name & BASEURL
+        id: meta
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BR="${{ github.head_ref }}"
+            # Preview URL pattern for Pages: <deploy-id>.<project>.pages.dev (we'll fall back to project URL)
+            echo "branch=$BR" >> "$GITHUB_OUTPUT"
+            echo "baseurl=https://${{ vars.CF_PAGES_PROJECT }}.pages.dev/" >> "$GITHUB_OUTPUT"
+          else
+            echo "branch=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+            echo "baseurl=https://az-certified.com/" >> "$GITHUB_OUTPUT"
+          fi
+    
+      - name: Build site
+        run: hugo --minify --baseURL "${{ steps.meta.outputs.baseurl }}" --printPathWarnings --logLevel info
+
+      - name: Compute branch name for Pages
+        id: branch
+        run: |
+          # For pull_request use head_ref; for push use ref_name
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "name=${{ github.head_ref }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "name=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+          fi
+
       # Deploy via Wrangler (Direct Upload)
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages (Wrangler)
         id: deploy
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}          # your Task 3 secret
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}        # your Task 3 secret
-          # Use wrangler v3+ 'pages deploy'
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: >
             pages deploy ./public
-            --project-name=${{ secrets.CF_PAGES_PROJECT }}
-            --branch=${{ github.ref_name }}
+            --project-name=${{ vars.CF_PAGES_PROJECT }}
+            --branch=${{ steps.branch.outputs.name }}
 
       # (Optional) Echo deployment URL in logs
       - name: Print deployment URL
