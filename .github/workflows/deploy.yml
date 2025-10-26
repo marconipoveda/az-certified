@@ -21,19 +21,31 @@ jobs:
         with:
           hugo-version: "0.151.2"
           extended: true
+    
+      - name: Build site
+        run: hugo --minify
+
+      - name: Compute branch name for Pages
+        id: branch
+        run: |
+          # For pull_request use head_ref; for push use ref_name
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "name=${{ github.head_ref }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "name=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+          fi
 
       # Deploy via Wrangler (Direct Upload)
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages (Wrangler)
         id: deploy
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}          # your Task 3 secret
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}        # your Task 3 secret
-          # Use wrangler v3+ 'pages deploy'
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: >
             pages deploy ./public
             --project-name=${{ secrets.CF_PAGES_PROJECT }}
-            --branch=${{ github.ref_name }}
+            --branch=${{ steps.branch.outputs.name }}
 
       # (Optional) Echo deployment URL in logs
       - name: Print deployment URL
