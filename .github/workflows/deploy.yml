@@ -16,6 +16,16 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        with:
+          path: |
+            resources/_gen
+            .hugo_cache
+          key: hugo-${{ runner.os }}-${{ hashFiles('**/*.scss', '**/*.js', 'config.*', 'hugo.toml', 'hugo.yaml', 'hugo.json') }}
+          restore-keys: |
+            hugo-${{ runner.os }}-
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:

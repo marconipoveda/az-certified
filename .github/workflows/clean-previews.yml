@@ -1,0 +1,46 @@
+name: Cleanup preview deployments
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete preview deployments for this PR
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+          PR_BRANCH: ${{ github.head_ref }}
+        run: |
+          echo "🔍 Looking for preview deployments for branch: $PR_BRANCH"
+
+          # Get deployments list (filter type=preview)
+          resp=$(curl -s -X GET \
+            -H "Authorization: Bearer $CF_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/pages/projects/${CF_PROJECT}/deployments?type=preview")
+
+          # Parse deployment IDs matching branch name
+          ids=$(echo "$resp" | jq -r --arg BR "$PR_BRANCH" '.result[] | select(.deployment_trigger.metadata.branch == $BR) | .id')
+
+          if [ -z "$ids" ]; then
+            echo "No preview deployments found for $PR_BRANCH."
+            exit 0
+          fi
+
+          echo "🧹 Cleaning up the following deployments:"
+          echo "$ids"
+
+          for id in $ids; do
+            echo "Deleting deployment $id..."
+            curl -s -X DELETE \
+              -H "Authorization: Bearer $CF_API_TOKEN" \
+              "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/pages/projects/${CF_PROJECT}/deployments/${id}" \
+              | jq '.success'
+          done
