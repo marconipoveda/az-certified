@@ -44,7 +44,7 @@ jobs:
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: >
             pages deploy ./public
-            --project-name=${{ secrets.CF_PAGES_PROJECT }}
+            --project-name=${{ vars.CF_PAGES_PROJECT }}
             --branch=${{ steps.branch.outputs.name }}
 
       # (Optional) Echo deployment URL in logs
