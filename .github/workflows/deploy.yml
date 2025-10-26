@@ -21,9 +21,22 @@ jobs:
         with:
           hugo-version: "0.151.2"
           extended: true
+
+      - name: Compute branch name & BASEURL
+        id: meta
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BR="${{ github.head_ref }}"
+            # Preview URL pattern for Pages: <deploy-id>.<project>.pages.dev (we'll fall back to project URL)
+            echo "branch=$BR" >> "$GITHUB_OUTPUT"
+            echo "baseurl=https://${{ vars.CF_PAGES_PROJECT }}.pages.dev/" >> "$GITHUB_OUTPUT"
+          else
+            echo "branch=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+            echo "baseurl=https://az-certified.com/" >> "$GITHUB_OUTPUT"
+          fi
     
       - name: Build site
-        run: hugo --minify
+        run: hugo --minify --baseURL "${{ steps.meta.outputs.baseurl }}" --printPathWarnings --logLevel info
 
       - name: Compute branch name for Pages
         id: branch
