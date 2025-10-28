@@ -1,5 +1,5 @@
 ---
-title: "Azure Fundamentals Questions"
+title: "Azure Fundamentals"
 hidden: true
 cascade:
     exam: "AZ 900"
