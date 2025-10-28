@@ -1,7 +1,7 @@
 {{- if not .IsNode }}
 {{ partial "quizdown.html" .}}
 {{- $page := . }}
-{{- with page }}
+{{- with $page }}
 <article class="questions">
     <h1 id="{{ .Title | plainify | anchorize }}">{{ .Title }}</h1>{{ partial "heading-post.html" . }}
     <div class='quizdown'>

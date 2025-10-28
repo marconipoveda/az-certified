@@ -1,0 +1,26 @@
+# Looks best on blue
+# themeVariant = [ "auto", "blue", "relearn-bright", "relearn-light", "relearn-dark", "zen-light", "zen-dark", "neon", "learn", "green", "red" ]
+# themeVariantAuto = [ "relearn-light", "relearn-dark" ]
+themeVariant = "neon"
+
+showVisitedLinks = false
+disableBreadcrumb = false
+disableNextPrev = false
+#disableSearch = false
+disableHistory = true
+disableLandingPageButton = true
+disableSeoHiddenPages = false
+hideAuthorDate = true
+
+
+alwaysopen = false
+# editURL is now set per-language in languages.toml
+# editURL = "https://github.com/FidelusAleksander/ghcertified/edit/master/content/"
+author.name = "Marconi Poveda/José Dávila"
+
+# Disable the language switching button until the site is fully translated
+disableLanguageSwitchingButton = false
+
+
+# Images for OpenGraph
+images = ["images/opengraph.png"]
