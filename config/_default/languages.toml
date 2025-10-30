@@ -1,9 +1,9 @@
 [en]
-title = 'AZ Certified'
+title = 'Azure Certified'
 weight = 1
 languageCode = 'en-US'
 languageName = 'English'
 contentDir = 'content/en'
 
 [en.params]
-editURL = 'https://github.com/marconipoveda/azcertified/edit/master/content/en/'
+editURL = 'https://github.com/marconipoveda/az-certified/edit/main/content/en/'

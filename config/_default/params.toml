@@ -1,7 +1,7 @@
 # Looks best on blue
 # themeVariant = [ "auto", "blue", "relearn-bright", "relearn-light", "relearn-dark", "zen-light", "zen-dark", "neon", "learn", "green", "red" ]
 # themeVariantAuto = [ "relearn-light", "relearn-dark" ]
-themeVariant = "neon"
+themeVariant = "blue"
 
 showVisitedLinks = false
 disableBreadcrumb = false

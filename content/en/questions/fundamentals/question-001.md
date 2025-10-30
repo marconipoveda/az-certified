@@ -4,7 +4,6 @@ title: "Question 001"
 ---
 
 
-
 > https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute
 
 1. [ ] Physical infrastructure redundancy
