@@ -1,13 +1,13 @@
 ---
-title: "Azure Fundamentals Practice Test"
+title: "Azure Administrator Associate Practice Test"
 Description: "Free practice test for the GitHub Actions Certification Exam."
-date: 2025-10-29T11:04:20+02:00
+date: 2025-10-28T11:04:20+02:00
 draft: false
 hidden: true
 weight: 10
-badge: "fundamentals_badge.png"
-include_exam: "AZ 900"
-domains: ["Describe cloud concepts", "Describe Azure architecture and services", "Describe Azure management and governance"]
+badge: "administrator_badge.png"
+include_exam: "AZ 104"
+domains: ["Manage Azure identities and governance", "Implement and manage storage", "DDeploy and manage Azure compute resources", "Implement and manage virtual networking", "Monitor and maintain Azure resources"]
 ---
 
 {{< practice_test >}}
