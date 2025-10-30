@@ -45,7 +45,7 @@ jobs:
           fi
     
       - name: Build site
-        run: hugo --minify --baseURL "${{ steps.meta.outputs.baseurl }}" --printPathWarnings --logLevel info
+        run: hugo
 
       - name: Compute branch name for Pages
         id: branch
