@@ -1,3 +1,5 @@
 
-### {{ .Params.question }}
-{{ .RawContent }}
+{{- $content := replaceRE `(?m)^\s*\d+\.\s+\[` "- [" .RawContent -}}
+    {{ .Params.question }}
+
+{{- $content -}}
