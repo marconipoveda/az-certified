@@ -1,13 +1,13 @@
 ---
-title: "Azure Fundamentals Practice Test"
-Description: "Free practice test for the GitHub Actions Certification Exam."
-date: 2025-10-29T11:04:20+02:00
+title: "Azure Solutions Architect Expert Practice Test"
+Description: "Free practice test for the Azure Solutions Architect Expert Certification Exam."
+date: 2025-10-28T11:04:20+02:00
 draft: false
 hidden: true
 weight: 10
-badge: "fundamentals_badge.png"
-include_exam: "AZ 900"
-domains: ["Describe cloud concepts", "Describe Azure architecture and services", "Describe Azure management and governance"]
+badge: "architect_badge.png"
+include_exam: "AZ 305"
+domains: ["Design identity, governance, and monitoring solutions", "Design data storage solutions", "Design business continuity solutions", "Design infrastructure solutions"]
 ---
 
 {{< practice_test >}}
