@@ -34,6 +34,12 @@ jobs:
           command: >
             pages deploy ./public
             --project-name=${{ vars.CF_PAGES_PROJECT }}
+      # (Optional) Echo deployment URL in logs
+      - name: Print deployment URL 
+        run: |
+          echo "### ✅ Build complete" >> $GITHUB_STEP_SUMMARY
+          echo "- Commit: $GITHUB_SHA" >> $GITHUB_STEP_SUMMARY
+          echo "- Deployed to ${{ steps.deploy.outputs.pages-deployment-alias-url }}" >> $GITHUB_STEP_SUMMARY
       - name: Find Comment
         if: github.event_name == 'pull_request'
         uses: peter-evans/find-comment@v4
