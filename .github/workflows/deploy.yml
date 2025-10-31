@@ -30,7 +30,6 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.145.0"
-          extended: true
 
       - name: Compute branch name & BASEURL
         id: meta
@@ -46,7 +45,7 @@ jobs:
           fi
     
       - name: Build site
-        run: hugo --minify --baseURL "${{ steps.meta.outputs.baseurl }}" --printPathWarnings --logLevel info
+        run: hugo
 
       - name: Compute branch name for Pages
         id: branch

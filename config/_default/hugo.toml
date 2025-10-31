@@ -1,10 +1,10 @@
-baseURL = 'https://az-certified.com/'
-defaultContentLanguage = 'en'
+baseURL = "https://az-certified.com/"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
-languageCode = 'en-us'
-title = 'Azure Certified'
+languageCode = "en-us"
+title = "Azure Certified"
 
-theme = 'hugo-theme-relearn'
+theme = "hugo-theme-relearn"
 
 [minify]
 disableHTML = true
