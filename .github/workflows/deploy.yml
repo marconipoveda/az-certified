@@ -9,6 +9,7 @@ on:
 
 jobs:
   deploy:
+    name: Deploy to Cloudflare Pages
     runs-on: ubuntu-latest
 
     steps:
@@ -17,25 +18,12 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-
-      - name: Cache Hugo resources
-        uses: actions/cache@v4
-        with:
-          path: |
-            resources/_gen
-            .hugo_cache
-          key: hugo-${{ runner.os }}-${{ hashFiles('**/*.scss', '**/*.js', 'config.*', 'hugo.toml', 'hugo.yaml', 'hugo.json') }}
-          restore-keys: |
-            hugo-${{ runner.os }}-
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.145.0"
-    
       - name: Build site
         run: hugo
-
       # Deploy via Wrangler (Direct Upload)
       - name: Deploy to Cloudflare Pages (Wrangler)
         id: deploy
@@ -46,21 +34,16 @@ jobs:
           command: >
             pages deploy ./public
             --project-name=${{ vars.CF_PAGES_PROJECT }}
-
-      # (Optional) Echo deployment URL in logs
-      - name: Print deployment URL
-        run: echo "Deployed to ${{ steps.deploy.outputs.deployment-url }}"
-
       - name: Find Comment
+        if: github.event_name == 'pull_request'
         uses: peter-evans/find-comment@v4
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
           comment-author: 'github-actions[bot]'
           body-includes: Preview Environment
-
       - name: Create comment
-        if: steps.fc.outputs.comment-id == ''
+        if: github.event_name == 'pull_request' && steps.fc.outputs.comment-id == ''
         uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -74,9 +57,8 @@ jobs:
 
             Please verify everything looks as expected.
           reactions: rocket
-
       - name: Update comment
-        if: steps.fc.outputs.comment-id != ''
+        if: github.event_name == 'pull_request' && steps.fc.outputs.comment-id != ''
         uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
