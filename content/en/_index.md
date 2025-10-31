@@ -11,8 +11,6 @@ description: "Master Azure Certifications with authentic practice tests. Not que
 
 [**Take Practice Tests Now**]({{% relref "practice_tests" %}}) - Experience realistic exam simulations that build confidence and identify areas for improvement.    
 
-{{< figure src="/images/practice_tests.gif" alt="Interactive Practice Tests Interface" >}}
-
 ---
 
 
