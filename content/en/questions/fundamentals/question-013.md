@@ -1,13 +1,6 @@
 ---
 title: "Question 013"
 question: "Which Azure characteristic means your applications stay available even when individual datacenter components fail?"
-module: "Module 1: Describe core Azure architectural components"
-domain: "Describe Cloud Concepts"
-difficulty: "easy"
-type: "multiple-choice"
-tags:
-  - az900
-  - resiliency
 ---
 
 > https://learn.microsoft.com/azure/architecture/guide/design-principles/availability
