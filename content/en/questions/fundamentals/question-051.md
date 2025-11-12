@@ -1,11 +1,11 @@
 ---
 title: "Question 051"
-question: "Drag and drop the Azure identity feature to its capability: (A) Conditional Access, (B) Managed Identity, (C) Azure AD B2C."
+question: "Which statements correctly describe Azure identity features? (Select all that apply.)"
 ---
 
 > https://learn.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis
 
-- [x] A → Enforces access policies based on conditions like sign-in risk
-- [x] B → Provides credentials for workloads to access Azure resources securely
-- [x] C → Manages customer identities for external apps
-- [ ] Any other mapping
+- [x] Conditional Access enforces policies based on conditions such as sign-in risk.
+- [x] Managed Identity provides credentials for workloads to access Azure resources securely.
+- [x] Azure AD B2C manages customer identities for external applications.
+- [ ] Managed Identity is designed for customer-facing sign-up experiences.

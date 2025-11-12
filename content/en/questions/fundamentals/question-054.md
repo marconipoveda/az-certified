@@ -1,11 +1,11 @@
 ---
 title: "Question 054"
-question: "Drag and drop the Azure reliability option to the outage scenario it mitigates: (A) Availability zones, (B) Region pair replication, (C) Azure Site Recovery."
+question: "Which statements describe how Azure reliability options mitigate outages? (Select all that apply.)"
 ---
 
 > https://learn.microsoft.com/azure/reliability/reliability-regional-pairs
 
-- [x] A → Datacenter-level failure inside a region
-- [x] B → Regional outage requiring failover to paired region
-- [x] C → Orchestrated workload recovery to alternate site
-- [ ] Any other mapping
+- [x] Availability zones protect against datacenter-level failures inside a region.
+- [x] Region pair replication enables failover when a full region is unavailable.
+- [x] Azure Site Recovery orchestrates workload recovery to an alternate site.
+- [ ] Availability zones replicate data to any Azure region worldwide.
