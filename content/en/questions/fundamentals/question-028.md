@@ -5,5 +5,5 @@ question: "True or false: A subscription boundary is required before creating Az
 
 > https://learn.microsoft.com/azure/azure-resource-manager/management/overview
 
-- [x] True
-- [ ] False
+1. [x] True
+1. [ ] False

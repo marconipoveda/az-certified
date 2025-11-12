@@ -5,5 +5,5 @@ question: "True or false: Availability zones exist in every Azure region worldwi
 
 > https://learn.microsoft.com/azure/reliability/availability-zones-overview
 
-- [ ] True
-- [x] False
+1. [ ] True
+1. [x] False

@@ -5,7 +5,7 @@ question: "Which Azure service lets you run event-driven code without provisioni
 
 > https://learn.microsoft.com/azure/azure-functions/functions-overview
 
-- [ ] Azure Virtual Machines
-- [ ] Azure Kubernetes Service
-- [x] Azure Functions
-- [ ] Azure Container Registry
+1. [ ] Azure Virtual Machines
+1. [ ] Azure Kubernetes Service
+1. [x] Azure Functions
+1. [ ] Azure Container Registry

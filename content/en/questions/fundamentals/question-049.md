@@ -5,7 +5,7 @@ question: "Fill in the blank: Azure ______ analyze spend trends and forecast fut
 
 > https://learn.microsoft.com/azure/cost-management-billing/costs/quick-acm-cost-analysis
 
-- [ ] Tags
-- [x] Cost analysis views
-- [ ] Reservations
-- [ ] Azure Monitor workbooks
+1. [ ] Tags
+1. [x] Cost analysis views
+1. [ ] Reservations
+1. [ ] Azure Monitor workbooks

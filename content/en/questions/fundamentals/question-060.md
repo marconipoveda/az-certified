@@ -5,7 +5,7 @@ question: "A global engineering firm must ensure governance policies follow work
 
 > https://learn.microsoft.com/azure/governance/blueprints/overview
 
-- [ ] Resource locks
-- [x] Azure Blueprints assigned at management group scope
-- [ ] Azure Spot VMs
-- [ ] Azure Backup vault
+1. [ ] Resource locks
+1. [x] Azure Blueprints assigned at management group scope
+1. [ ] Azure Spot VMs
+1. [ ] Azure Backup vault

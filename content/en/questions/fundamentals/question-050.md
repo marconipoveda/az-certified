@@ -5,7 +5,7 @@ question: "A logistics firm needs to replicate data to another Azure region with
 
 > https://learn.microsoft.com/azure/storage/common/storage-redundancy
 
-- [ ] Locally redundant storage (LRS)
-- [x] Geo-redundant storage (GRS)
-- [ ] Zone-redundant storage (ZRS)
-- [ ] Azure Files
+1. [ ] Locally redundant storage (LRS)
+1. [x] Geo-redundant storage (GRS)
+1. [ ] Zone-redundant storage (ZRS)
+1. [ ] Azure Files

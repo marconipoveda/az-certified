@@ -5,5 +5,5 @@ question: "True or false: Azure Arc can project on-premises servers into Azure f
 
 > https://learn.microsoft.com/azure/azure-arc/overview
 
-- [x] True
-- [ ] False
+1. [x] True
+1. [ ] False

@@ -5,7 +5,7 @@ question: "A media company needs content cached near users to minimize download 
 
 > https://learn.microsoft.com/azure/cdn/cdn-overview
 
-- [ ] Azure Load Balancer
-- [ ] Azure Traffic Manager
-- [x] Azure Content Delivery Network
-- [ ] Azure VPN Gateway
+1. [ ] Azure Load Balancer
+1. [ ] Azure Traffic Manager
+1. [x] Azure Content Delivery Network
+1. [ ] Azure VPN Gateway

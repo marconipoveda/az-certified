@@ -5,7 +5,7 @@ question: "Your company plans to deploy a customer portal globally but needs low
 
 > https://learn.microsoft.com/azure/networking/global-network
 
-- [ ] Availability sets
-- [ ] Azure ExpressRoute
-- [x] Azure global network of paired regions
-- [ ] Azure AD Connect
+1. [ ] Availability sets
+1. [ ] Azure ExpressRoute
+1. [x] Azure global network of paired regions
+1. [ ] Azure AD Connect

@@ -5,7 +5,7 @@ question: "Fill in the blank: Azure ______ provide single-tenant, dedicated phys
 
 > https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts
 
-- [ ] Spot VMs
-- [x] Dedicated Hosts
-- [ ] Scale sets
-- [ ] Functions
+1. [ ] Spot VMs
+1. [x] Dedicated Hosts
+1. [ ] Scale sets
+1. [ ] Functions

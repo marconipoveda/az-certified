@@ -5,7 +5,7 @@ question: "A fintech firm needs encryption for secrets and seamless key rotation
 
 > https://learn.microsoft.com/azure/key-vault/general/basic-concepts
 
-- [ ] Azure Firewall
-- [x] Azure Key Vault
-- [ ] Azure Information Protection
-- [ ] Azure DDoS Protection
+1. [ ] Azure Firewall
+1. [x] Azure Key Vault
+1. [ ] Azure Information Protection
+1. [ ] Azure DDoS Protection

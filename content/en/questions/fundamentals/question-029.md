@@ -5,7 +5,7 @@ question: "Which Azure construct allows centralized policy management across mul
 
 > https://learn.microsoft.com/azure/governance/management-groups/overview
 
-- [ ] Resource groups
-- [ ] Availability zones
-- [x] Management groups
-- [ ] Blueprints artifacts
+1. [ ] Resource groups
+1. [ ] Availability zones
+1. [x] Management groups
+1. [ ] Blueprints artifacts

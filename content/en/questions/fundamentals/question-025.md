@@ -5,7 +5,7 @@ question: "Which Azure networking component isolates traffic between resources w
 
 > https://learn.microsoft.com/azure/virtual-network/virtual-networks-overview
 
-- [ ] Application Gateway
-- [x] Virtual Network (VNet)
-- [ ] Load Balancer
-- [ ] Traffic Manager
+1. [ ] Application Gateway
+1. [x] Virtual Network (VNet)
+1. [ ] Load Balancer
+1. [ ] Traffic Manager
