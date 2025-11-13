@@ -5,7 +5,7 @@ question: "An enterprise running mission-critical ERP needs 99.99% availability 
 
 > https://learn.microsoft.com/azure/reliability/reliability-regional-pairs
 
-- [ ] Availability sets only
-- [ ] Single-zone deployment
-- [x] Active-active deployment across paired regions
-- [ ] Azure CDN caching
+1. [ ] Availability sets only
+1. [ ] Single-zone deployment
+1. [x] Active-active deployment across paired regions
+1. [ ] Azure CDN caching

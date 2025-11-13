@@ -5,7 +5,7 @@ question: "Which Azure tool gives best-practice recommendations across reliabili
 
 > https://learn.microsoft.com/azure/advisor/advisor-overview
 
-- [ ] Azure Monitor Logs
-- [x] Azure Advisor
-- [ ] Azure Policy
-- [ ] Azure Lighthouse
+1. [ ] Azure Monitor Logs
+1. [x] Azure Advisor
+1. [ ] Azure Policy
+1. [ ] Azure Lighthouse

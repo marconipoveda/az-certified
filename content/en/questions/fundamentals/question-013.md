@@ -5,7 +5,7 @@ question: "Which Azure characteristic means your applications stay available eve
 
 > https://learn.microsoft.com/azure/architecture/guide/design-principles/availability
 
-- [ ] Elasticity
-- [x] High availability
-- [ ] Geographic distribution
-- [ ] Governance
+1. [ ] Elasticity
+1. [x] High availability
+1. [ ] Geographic distribution
+1. [ ] Governance

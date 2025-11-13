@@ -5,7 +5,7 @@ question: "A financial services firm must ensure all logs are retained for seven
 
 > https://learn.microsoft.com/azure/azure-monitor/logs/data-retention-archive
 
-- [ ] Azure Network Watcher
-- [x] Azure Monitor Logs with retention policies
-- [ ] Azure Key Vault
-- [ ] Azure DevOps
+1. [ ] Azure Network Watcher
+1. [x] Azure Monitor Logs with retention policies
+1. [ ] Azure Key Vault
+1. [ ] Azure DevOps

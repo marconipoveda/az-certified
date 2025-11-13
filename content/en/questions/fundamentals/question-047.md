@@ -5,7 +5,7 @@ question: "A healthcare provider wants to protect administrator accounts with ju
 
 > https://learn.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure
 
-- [ ] Azure RBAC
-- [x] Privileged Identity Management (PIM)
-- [ ] Azure Policy
-- [ ] Azure Security Benchmark
+1. [ ] Azure RBAC
+1. [x] Privileged Identity Management (PIM)
+1. [ ] Azure Policy
+1. [ ] Azure Security Benchmark

@@ -5,7 +5,7 @@ question: "Fill in the blank: Azure ______ enables workload teams to simulate on
 
 > https://learn.microsoft.com/azure/cloud-adoption-framework/plan/tco
 
-- [ ] Pricing Calculator
-- [x] Total Cost of Ownership Calculator
-- [ ] Cost analysis view
-- [ ] Azure Lighthouse
+1. [ ] Pricing Calculator
+1. [x] Total Cost of Ownership Calculator
+1. [ ] Cost analysis view
+1. [ ] Azure Lighthouse

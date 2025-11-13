@@ -21,7 +21,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.145.0"
+          hugo-version: "0.152.2"
       - name: Build site
         run: hugo
       # Deploy via Wrangler (Direct Upload)
@@ -35,7 +35,7 @@ jobs:
             pages deploy ./public
             --project-name=${{ vars.CF_PAGES_PROJECT }}
       # (Optional) Echo deployment URL in logs
-      - name: Print deployment URL 
+      - name: Print deployment URL
         run: |
           echo "### ✅ Build complete" >> $GITHUB_STEP_SUMMARY
           echo "- Commit: $GITHUB_SHA" >> $GITHUB_STEP_SUMMARY

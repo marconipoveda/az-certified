@@ -5,7 +5,7 @@ question: "A startup wants to evaluate Azure quickly without a long-term commitm
 
 > https://learn.microsoft.com/azure/free
 
-- [ ] Enterprise Agreement
-- [x] Azure Free Account
-- [ ] Pay-as-you-go subscription
-- [ ] Student subscription
+1. [ ] Enterprise Agreement
+1. [x] Azure Free Account
+1. [ ] Pay-as-you-go subscription
+1. [ ] Student subscription

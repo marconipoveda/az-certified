@@ -5,5 +5,5 @@ question: "True or false: Azure Policy can deny the creation of resources that v
 
 > https://learn.microsoft.com/azure/governance/policy/concepts/definition-structure
 
-- [x] True
-- [ ] False
+1. [x] True
+1. [ ] False

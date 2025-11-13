@@ -5,5 +5,5 @@ question: "True or false: Capital expenditures (CapEx) are minimized when adopti
 
 > https://learn.microsoft.com/training/modules/principles-cloud-computing/4-explore-costs
 
-- [x] True
-- [ ] False
+1. [x] True
+1. [ ] False

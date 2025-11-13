@@ -5,7 +5,7 @@ question: "Fill in the blank: Azure regions consist of one or more ______ that h
 
 > https://learn.microsoft.com/azure/reliability/regions
 
-- [ ] Geopolitical zones
-- [x] Datacenters
-- [ ] Virtual networks
-- [ ] Resource groups
+1. [ ] Geopolitical zones
+1. [x] Datacenters
+1. [ ] Virtual networks
+1. [ ] Resource groups

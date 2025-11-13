@@ -5,5 +5,5 @@ question: "True or false: Azure Dedicated Hosts automatically distribute tenant 
 
 > https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts
 
-- [ ] True
-- [x] False
+1. [ ] True
+1. [x] False

@@ -5,7 +5,7 @@ question: "A retailer wants to guarantee low-latency access to inventory data wi
 
 > https://learn.microsoft.com/azure/virtual-machines/availability
 
-- [x] Availability set
-- [ ] Availability zone
-- [ ] Traffic Manager
-- [ ] Content Delivery Network
+1. [x] Availability set
+1. [ ] Availability zone
+1. [ ] Traffic Manager
+1. [ ] Content Delivery Network

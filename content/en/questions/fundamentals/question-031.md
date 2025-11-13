@@ -5,7 +5,7 @@ question: "What Azure feature lets organizations use existing Windows Server lic
 
 > https://learn.microsoft.com/azure/virtual-machines/windows/hybrid-use-benefit-licensing
 
-- [ ] Azure Reservation
-- [x] Azure Hybrid Benefit
-- [ ] Spot pricing
-- [ ] Free Grant
+1. [ ] Azure Reservation
+1. [x] Azure Hybrid Benefit
+1. [ ] Spot pricing
+1. [ ] Free Grant
