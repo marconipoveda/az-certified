@@ -1,11 +1,11 @@
 ---
 title: "Question 010"
-question: "What is the primary characteristic that enables cloud computing to rapidly expand IT infrastructure compared to traditional datacenters?"
+question: "A research team must spin up 5,000 cores across Europe and North America for a 24-hour simulation and immediately release them afterward. Which cloud computing capability most directly enables this burst capacity without idle infrastructure costs?"
 ---
 
-> https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute
+> https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/2-key-terms
 
-1. [ ] Physical infrastructure redundancy
-1. [x] Delivery of computing services over the internet
-1. [ ] Artificial intelligence capabilities
-1. [ ] Machine learning integration
+1. [ ] Purchasing dedicated host reservations for each workload
+1. [x] Elasticity enabled by on-demand self-service provisioning
+1. [ ] Leveraging edge computing locations for lower latency
+1. [ ] Integrating workloads with managed identities
