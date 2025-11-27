@@ -3,7 +3,7 @@ title: "Question 042"
 question: "Which Azure monitoring feature unifies metrics, logs, and alerts for cloud resources?"
 ---
 
-> https://learn.microsoft.com/azure/azure-monitor/overview
+> <a href="https://learn.microsoft.com/azure/azure-monitor/overview" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/azure/azure-monitor/overview</a>
 
 1. [x] Azure Monitor
 1. [ ] Azure Sentinel

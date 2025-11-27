@@ -3,7 +3,7 @@ title: "Question 080"
 question: "Which Azure feature provides an audit trail of who performed what action on which resource and when?"
 ---
 
-> https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log
+> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log</a>
 
 1. [ ] Azure Policy
 1. [x] Azure Activity Log

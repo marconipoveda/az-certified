@@ -3,7 +3,7 @@ title: "Question 088"
 question: "Which Azure tool allows you to estimate the cost of Azure services before deployment?"
 ---
 
-> https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/pricing-calculator
+> <a href="https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/pricing-calculator" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/pricing-calculator</a>
 
 1. [x] Azure Pricing Calculator
 1. [ ] Azure Cost Management

@@ -3,7 +3,7 @@ title: "Question 099"
 question: "Which Azure service provides detailed cost analysis and visualization of spending patterns?"
 ---
 
-> https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis
+> <a href="https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis</a>
 
 1. [ ] Azure Monitor
 1. [ ] Azure Advisor

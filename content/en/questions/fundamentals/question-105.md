@@ -3,7 +3,7 @@ title: "Question 105"
 question: "What is the formula to calculate composite SLA when using multiple independent services?"
 ---
 
-> https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/business-metrics
+> <a href="https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/business-metrics" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/business-metrics</a>
 
 1. [ ] Add all SLAs together
 1. [ ] Use the lowest SLA value

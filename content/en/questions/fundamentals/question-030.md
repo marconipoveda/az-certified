@@ -3,7 +3,7 @@ title: "Question 030"
 question: "Which statements correctly describe the listed Azure benefits? (Select all that apply.)"
 ---
 
-> https://learn.microsoft.com/azure/architecture/framework/scalability/design-checklist
+> <a href="https://learn.microsoft.com/azure/architecture/framework/scalability/design-checklist" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/azure/architecture/framework/scalability/design-checklist</a>
 
 - [x] Elasticity automatically adds resources to handle demand spikes.
 - [x] Agility focuses on quickly deploying new solutions via managed services.

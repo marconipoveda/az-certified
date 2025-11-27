@@ -3,7 +3,7 @@ title: "Question 022"
 question: "Which option best describes Azure’s shared responsibility model?"
 ---
 
-> https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+> <a href="https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility</a>
 
 1. [ ] Microsoft handles all security controls for all services.
 1. [x] Responsibility shifts between Microsoft and the customer depending on service model.

@@ -3,7 +3,7 @@ title: "Question 012"
 question: "Under Azure's shared responsibility model for Azure SQL Database (PaaS), which division of duties is accurate?"
 ---
 
-> https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility
+> <a href="https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility</a>
 
 1. [ ] Microsoft patches the OS while also configuring customer firewall rules and logins
 1. [x] Microsoft secures the physical hosts and service platform; the customer configures firewall rules, identities, and data controls
