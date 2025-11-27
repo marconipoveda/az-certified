@@ -3,7 +3,7 @@ title: "Question 100"
 question: "What is the minimum SLA uptime percentage for most generally available Azure services?"
 ---
 
-> https://azure.microsoft.com/en-us/support/legal/sla/
+> <a href="https://azure.microsoft.com/en-us/support/legal/sla/" target="_blank" rel="noopener noreferrer">https://azure.microsoft.com/en-us/support/legal/sla/</a>
 
 1. [ ] 95%
 1. [ ] 98%

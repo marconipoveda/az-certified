@@ -3,7 +3,7 @@ question: "What is the primary characteristic that enables cloud computing to ra
 title: "Question 001"
 ---
 
-> https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute
+> <a href="https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute</a>
 
 1. [ ] Physical infrastructure redundancy
 1. [x] Delivery of computing services over the internet

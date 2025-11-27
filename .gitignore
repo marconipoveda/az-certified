@@ -1,6 +1,5 @@
 .idea
 .vscode
 /public
-/static
 .DS_Store
 .hugo_build.lock

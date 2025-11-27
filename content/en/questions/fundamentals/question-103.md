@@ -3,7 +3,7 @@ title: "Question 103"
 question: "What happens when an Azure service fails to meet its SLA commitment?"
 ---
 
-> https://azure.microsoft.com/en-us/support/legal/sla/
+> <a href="https://azure.microsoft.com/en-us/support/legal/sla/" target="_blank" rel="noopener noreferrer">https://azure.microsoft.com/en-us/support/legal/sla/</a>
 
 1. [ ] Azure automatically upgrades your service tier
 1. [x] You may be eligible for a service credit

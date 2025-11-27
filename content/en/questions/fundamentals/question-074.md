@@ -3,7 +3,7 @@ title: "Question 074"
 question: "What is the scope at which Azure Policy can be assigned?"
 ---
 
-> https://learn.microsoft.com/en-us/azure/governance/policy/overview
+> <a href="https://learn.microsoft.com/en-us/azure/governance/policy/overview" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/azure/governance/policy/overview</a>
 
 1. [ ] Only at the subscription level
 1. [ ] Only at the resource group level
